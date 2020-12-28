@@ -1,24 +1,41 @@
 ---
-title: 安装和引用
+title: 使用介绍
 date: 2019-04-09
 ---
+<DemoBlock title="基础用法" desc="基础用法" onlineRunLink="www.baidu.com">
+   <!-- <button>test</button> -->
+   <DragTree></DragTree>
 
-## 安装
+  <!-- <template slot="codeDesc">
+   按钮实体
+  </template> -->
 
-```bash
-npm install vuepress-theme-reco --save-dev
+  <highlight-code slot="code" lang="vue">
 
-# or
+  <<< @/.vuepress/components/examples/VueDragTreeOrg.vue
 
-yarn add vuepress-theme-reco
-```
+  </highlight-code>
+    <highlight-code slot="web" lang="vue">
 
-## 引用
+  <<< @/.vuepress/components/examples/VueDragTreeOrg.vue
 
-```javascript
-// .vuepress/config.js
+  </highlight-code>
+</DemoBlock>
 
-module.exports = {
-  theme: 'reco'
-}  
-```
+<DemoTable title="参数" :tableBody="tableBody" :tableHead="tableHead"/>
+
+<script>
+  export default {
+    data() {
+      return {
+        //表头为字符串，写法和md一样，中间以`|`间隔就行
+        tableHead: `参数 | 说明 | 类型 | 可选值 | 默认值`,
+        //表格数据为数组，其中每一项为字符串，代表每一行要展示的数据，写法也和md一样，中间以`|`间隔就行
+        tableBody: [
+          `size | 尺寸 | String | medium / small / mini | —`
+        ],
+      }
+    },
+
+  }
+</script>

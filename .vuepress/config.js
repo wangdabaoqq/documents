@@ -23,8 +23,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-      title: "插件开发汇总",
-      description: '正在进步呀'
+      title: "插件开发汇总"
+      // description: '正在进步呀'
     }
     // '/en/': {
     //   lang: 'en-US',
@@ -33,7 +33,7 @@ module.exports = {
     // }    
   },
   markdown: {
-    lineNumbers: true
+    // lineNumbers: true
   },
   plugins: [
     // [

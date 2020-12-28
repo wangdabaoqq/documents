@@ -1,14 +1,15 @@
+set -e
 npm run build
 
-cd public
+cd ../.vuepress/dist
 
 git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:recoluan/vuepress-reco-doc.git master
+git push -f git@github.com:wangdabaoqq/documents.git master:gh-pages
 
-git push -f git@git.coding.net:recoluan/vuepress-theme-reco-doc.git master
+# git push -f git@git.coding.net:recoluan/vuepress-theme-reco-doc.git master
 
-cd ../
-rm -rf public
+cd -
+# rm -rf public

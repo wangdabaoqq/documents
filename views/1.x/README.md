@@ -1,10 +1,35 @@
 ---
-title: 介绍
+title: 在vue2.X中使用
 date: 2019-04-09
 ---
 
-欢迎来到`vuepress-theme-reco@1.x`，如果你正在使用 `vuepress@0.x`，请移步 [vuepress-theme-reco@0.x](/views/0.x/)。
+欢迎来到`vue-drag-tree-org`, 当然也希望你可以喜欢用`vue-drag-tree-org`.
 
 ::: warning
-该主题几乎继承 `VuePress` 默认主题的一切功能，所以本文档只负责介绍该主题扩展的功能，如果你发现某些功能本网站没有相关文档，或者想要了解默认主题的一些功能，请移步 [官方文档](https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html)。
+  选择开发`vue-drag-tree-org`, 归根结底还是因为有这方面的需求, 发现市面上基于组织树的插件或者包比较少。
+  其中最贴合的就是`vue-org-tree`, 但是比较遗憾的是没有拖拽的功能。索性我就基于`vue-org-tree`和`element-ui`的
+  tree开发一款基于拖拽的组织树。
 :::
+## 安装
+
+
+```bash
+# use npm
+npm install vue-drag-tree-org --save-dev
+
+# use yarn
+yarn add vue-drag-tree-org
+```
+
+## 引用
+
+```js
+# use
+import VueDragTree from 'vue-drag-tree-org'
+
+Vue.use(VueDragTree)
+
+# or use
+compoents: {
+  VueDragTree
+}

@@ -6,41 +6,41 @@ module.exports = {
         collapsable: false,
         children: [
           '',
+          // 'installUse',
+          // 'blog',
+          // 'frontMatter'
+        ]
+      },
+      // {
+      //   title: '进阶',
+      //   collapsable: false,
+      //   children: [
+      //     'timeline',
+      //     'valine',
+      //     'password',
+      //     'configJs',
+      //     'home',
+      //     'notfound',
+      //     'mode',
+      //     'local',
+      //     'codeTheme',
+      //     'sidebar'
+      //   ]
+      // },
+      // {
+      //   title: '默认主题配置',
+      //   collapsable: false,
+      //   children: [
+      //     'abstract',
+      //     'syntax',
+      //     'customStyleAndScript'
+      //   ]
+      // },
+      {
+        title: '使用介绍',
+        collapsable: false,
+        children: [
           'installUse',
-          'blog',
-          'frontMatter'
-        ]
-      },
-      {
-        title: '进阶',
-        collapsable: false,
-        children: [
-          'timeline',
-          'valine',
-          'password',
-          'configJs',
-          'home',
-          'notfound',
-          'mode',
-          'local',
-          'codeTheme',
-          'sidebar'
-        ]
-      },
-      {
-        title: '默认主题配置',
-        collapsable: false,
-        children: [
-          'abstract',
-          'syntax',
-          'customStyleAndScript'
-        ]
-      },
-      {
-        title: '其他',
-        collapsable: false,
-        children: [
-          'updatetoone',
           'recommend'
         ]
       }

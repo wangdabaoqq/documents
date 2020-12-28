@@ -14,10 +14,10 @@ module.exports = {
   // 备案号
   // record: '京ICP备17067634号-1',
   // 项目开始时间
-  startYear: '2017',
+  startYear: '2018',
   algolia: {
     apiKey: '97357e58cac743c6de62036cb152f18b',
-    indexName: 'vuepress-theme-reco'
+    indexName: '1111'
     // inputSelector: '### REPLACE ME ####',
     // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
     // debug: false // Set debug to true if you want to inspect the dropdown
@@ -36,16 +36,16 @@ module.exports = {
     admins: ['wangdabaoqq'],
     platform: 'github',
     owner: 'wangdabaoqq',
-    repo: 'vuepress-reco.github.io',
+    repo: 'wangdabaoqq/documents',
     clientId: '0bdafb4af5f892df2231',
     clientSecret: 'f0d1ffefb8c6a11f66379b7f72c0cfed156b1b1c',
   },
   // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-  repo: 'vuepress-reco/vuepress-reco.github.io',
+  repo: 'wangdabaoqq/documents',
   // // 假如文档不是放在仓库的根目录下：
   docsDir: 'docs',
   // // 假如文档放在一个特定的分支下：
-  docsBranch: 'gh-pages-source',
+  docsBranch: 'master',
   // // 默认是 false, 设置为 true 来启用
   editLinks: true,
   mode: 'light',
