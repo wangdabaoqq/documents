@@ -3,7 +3,7 @@ title: 使用
 date: 2019-04-09
 ---
 
-<DemoBlock title="基础用法" desc="基础用法" onlineRunLink="www.baidu.com" :config="codeNavConfigs">
+<DemoBlock title="基础用法" desc="基础用法" onlineRunLink="https://codesandbox.io/s/nice-shannon-y8yo2?file=/index.html" :config="codeNavConfigs">
    <!-- <button>test</button> -->
    <DragTree></DragTree>
 

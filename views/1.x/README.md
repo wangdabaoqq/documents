@@ -26,6 +26,7 @@ yarn add vue-drag-tree-org
 ```js
 # use
 import VueDragTree from 'vue-drag-tree-org'
+import 'vue-drag-tree-org/lib/theme/index.css'
 
 Vue.use(VueDragTree)
 
