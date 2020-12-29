@@ -37,8 +37,8 @@ module.exports = {
     platform: 'github',
     owner: 'wangdabaoqq',
     repo: 'wangdabaoqq/documents',
-    clientId: '0bdafb4af5f892df2231',
-    clientSecret: 'f0d1ffefb8c6a11f66379b7f72c0cfed156b1b1c',
+    clientId: '6113a548edc8790e06a9',
+    clientSecret: '92efbaf40784cdc3738a8f8aa609c29f7eaeadea',
   },
   // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
   repo: 'wangdabaoqq/documents',

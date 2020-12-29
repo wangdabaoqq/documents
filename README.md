@@ -10,7 +10,7 @@ heroImageStyle: {
 }
 isShowTitleInHome: true
 actionText: 快速开始
-actionLink: /views/1.x/jsRead
+actionLink: /views/1.x/
 features:
 - title: 过去
   details: 开发一款看着开心、写着顺手的 vuepress 博客主题。
