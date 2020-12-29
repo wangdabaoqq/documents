@@ -1,5 +1,14 @@
-<template>
-   <vueDragTree
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-drag-tree-org@1.0.4/lib/theme/index.css">
+  <title>vue-drag-tree-org</title>
+</head>
+<body>
+  <div id="app" class="container">
+  <vue-drag-tree-org
       :data="data"
       :props="defaultProps"
       node-key="id"
@@ -14,19 +23,17 @@
           {{ data.label }}
         </span>
       </span>
-    </vueDragTree>
-</template>
-
-<script>
-import vueDragTree from 'vue-drag-tree-org'
-import 'vue-drag-tree-org/lib/theme/index.css'
-export default {
-  name: 'DragTree',
-  components: { vueDragTree },
+    </vue-drag-tree-org>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-drag-tree-org@1.0.4/lib/index.umd.js"></script>
+<script type="text/javascript">
+ var vm = new Vue({
+  el: '#app',
   data() {
     return {
       direction: 'Horizontal',
-      isExpand: false,
+      isExpand: true,
       data: [
         {
           id: 0,
@@ -84,13 +91,8 @@ export default {
         label: 'label'
       }
     }
-  },
-  mounted() {
-    console.log(this.data)
   }
-}
+ })
 </script>
-
-<style>
-
-</style>
+</body>
+</html>

@@ -1,14 +1,14 @@
 module.exports = {
   'zh': [
-    { text: '插件', 
+    { text: '文档', 
       icon: 'reco-api',
       items: [
-        { 
-          text: '插件', items: [
-            { text: 'vue-drag-tree-org', link: '/views/1.x/' },
+        // { 
+          // text: '文档', items: [
+        { text: 'vue-drag-tree-org', link: '/views/1.x/' },
             // { text: '0.x', link: '/views/0.x/' }
-          ],
-        }
+          // ],
+        // }
         // {
         //   text: '其他', items: [
         //     { text: '官方插件', link: '/views/plugins/index.html' },

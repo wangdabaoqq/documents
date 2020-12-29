@@ -7,7 +7,7 @@ module.exports = {
         children: [
           '',
           // 'installUse',
-          // 'blog',
+          'jsRead',
           // 'frontMatter'
         ]
       },
@@ -37,63 +37,69 @@ module.exports = {
       //   ]
       // },
       {
-        title: '使用介绍',
+        title: 'JS中使用介绍',
         collapsable: false,
         children: [
-          'installUse',
-          'recommend'
-        ]
-      }
-    ],
-    '/views/0.x/': [
-      {
-        title: '基础',
-        collapsable: false,
-        children: [
-          '',
-          'installUse',
-          'category',
-          'tag',
+          'installJS'
         ]
       },
       {
-        title: '进阶',
+        title: 'vue中使用介绍',
         collapsable: false,
         children: [
-          'timeline',
-          'valine',
-          'password',
-          'configJs',
-          'home'
-        ]
-      },
-      {
-        title: '其他',
-        collapsable: false,
-        children: [
-          'abstract',
+          'installVue'
         ]
       }
     ],
-    '/views/plugins/': [
-      {
-        title: '插件',
-        collapsable: true,
-        children: [
-          '',
-          'backToTop',
-          'pagation',
-          'screenfull',
-          'loadingPage',
-          'kanbanniang',
-          'comments',
-          'extractCode',
-          'rss',
-          'bgmPlayer',
-          'bulletinPopover'
-        ]
-      }
-    ]
+  //   '/views/0.x/': [
+  //     {
+  //       title: '基础',
+  //       collapsable: false,
+  //       children: [
+  //         '',
+  //         'installUse',
+  //         'category',
+  //         'tag',
+  //       ]
+  //     },
+  //     {
+  //       title: '进阶',
+  //       collapsable: false,
+  //       children: [
+  //         'timeline',
+  //         'valine',
+  //         'password',
+  //         'configJs',
+  //         'home'
+  //       ]
+  //     },
+  //     {
+  //       title: '其他',
+  //       collapsable: false,
+  //       children: [
+  //         'abstract',
+  //       ]
+  //     }
+  //   ],
+  //   '/views/plugins/': [
+  //     {
+  //       title: '插件',
+  //       collapsable: true,
+  //       children: [
+  //         '',
+  //         'backToTop',
+  //         'pagation',
+  //         'screenfull',
+  //         'loadingPage',
+  //         'kanbanniang',
+  //         'comments',
+  //         'extractCode',
+  //         'rss',
+  //         'bgmPlayer',
+  //         'bulletinPopover'
+  //       ]
+  //     }
+  //   ]
   }),
   'en': Object.assign({}, {
     '/en/views/1.x/': [

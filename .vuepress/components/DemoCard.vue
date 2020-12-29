@@ -13,18 +13,21 @@
       >
         <slot name="codeDesc" />
       </div>
+
+      <div class="demo-code-nav">
        <button
-              v-for="(config, index) in codeNavConfigs"
-              :key="index"
-              :class="['demo-code-btn', codeNavIndex === index ? 'active' : '']"
-              @click="codeNavBtnHandler(index)">{{config.title}}</button>
+        v-for="(config, index) in config"
+        :key="index"
+        :class="['demo-code-btn', codeNavIndex === index ? 'active' : '']"
+        @click="codeNavBtnHandler(index)">{{config.title}}</button>
+        </div>
       <div class="code-src">
         <!-- <slot name="code" /> -->
         <!-- <slot name="code" /> -->
 
         <div
           class="demo-code-item"
-          v-for="(config, index) in codeNavConfigs"
+          v-for="(config, index) in config"
           :key="index"
           v-show="codeNavIndex === index">
           <!-- {{config.slotName}} -->
@@ -61,7 +64,7 @@ export default {
       codeNavConfigs: [
         {
           title: 'Web',
-          slotName: 'code'
+          slotName: 'web'
         },
         {
           title: 'Vue',
@@ -70,8 +73,18 @@ export default {
       ]
     };
   },
+  computed: {
+    config () {
+      // todo
+      if (!this.$attrs.config) return []
+      // console.log(this.$attrs.config)
+      let config = this.codeNavConfigs.filter(ele => this.$attrs.config.includes(ele.slotName))
+      console.log(config)
+      return config
+    }
+  },
   mounted () {
-    console.log(this)
+    console.log(this.config)
   },
   methods: {
     open() {
@@ -146,4 +159,49 @@ export default {
     z-index: 100;
     cursor: pointer;
   }
+  .demo-code-btn {
+        display: block;
+    padding: 0 16px;
+    margin: 0 8px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+  }
+   /* .demo-code-btn:hover {
+      color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+   }
+   .demo-code-btn:active {
+       color: #3a8ee6;
+    border-color: #3a8ee6;
+    outline: none;
+   } */
+   .active {
+           background: #f5f5f5;
+    color: #3eaf7c;
+    transition: all .3s ease;
+   }
+    .demo-code-nav {
+          background-color: #2d2d2d;
+    border-color: #2d2d2d;
+    color: #fff;
+       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      height: 48px;
+      border-bottom: 1px solid hsla(0,0%,100%,.12);
+}
+pre {
+  border-radius: 0;
+}
+
 </style>

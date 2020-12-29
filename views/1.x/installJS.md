@@ -1,8 +1,9 @@
 ---
-title: 使用介绍
+title: 使用
 date: 2019-04-09
 ---
-<DemoBlock title="基础用法" desc="基础用法" onlineRunLink="www.baidu.com">
+
+<DemoBlock title="基础用法" desc="基础用法" onlineRunLink="www.baidu.com" :config="codeNavConfigs">
    <!-- <button>test</button> -->
    <DragTree></DragTree>
 
@@ -10,19 +11,12 @@ date: 2019-04-09
    按钮实体
   </template> -->
 
-  <highlight-code slot="code" lang="vue">
+  <highlight-code slot="web" lang="vue">
 
-  <<< @/.vuepress/components/examples/VueDragTreeOrg.vue
-
-  </highlight-code>
-    <highlight-code slot="web" lang="vue">
-
-  <<< @/.vuepress/components/examples/VueDragTreeOrg.vue
+  <<< @/.vuepress/components/examples/VueDragTreeOrg.html
 
   </highlight-code>
 </DemoBlock>
-
-<DemoTable title="参数" :tableBody="tableBody" :tableHead="tableHead"/>
 
 <script>
   export default {
@@ -34,6 +28,7 @@ date: 2019-04-09
         tableBody: [
           `size | 尺寸 | String | medium / small / mini | —`
         ],
+        codeNavConfigs: ['web'] 
       }
     },
 

@@ -8,22 +8,16 @@
         {{ bindValue.desc }}
       </p>
     </header>
-    <DemoCard :onlineRunLink="bindValue.onlineRunLink">
+    <DemoCard :onlineRunLink="bindValue.onlineRunLink" :config="bindValue.config">
       <slot />
       <template slot="codeDesc">
         <slot name="codeDesc" />
       </template>
-      <!-- <template slot="code">
-        <slot name="code" />
-      </template> -->
-      <!-- <template slot="code">
-        <slot name="code" />
-      </template> -->
-      <div v-for="item in ['code', 'web']" :key="item">
-        <template :slot="item">
-          <slot :name="item" />
-        </template>
-      </div>
+       <template :slot="config" 
+          v-for="(config, index) in bindValue.config"
+        >
+        <slot :name="config" />
+       </template>
     </DemoCard>
   </div>
 </template>
@@ -32,11 +26,12 @@ import DemoCard from './DemoCard'
 export default {
   components: { DemoCard },
   data() {
-    return {};
+    return {
+    };
   },
   computed: {
     bindValue() {
-      console.log(this.props, this.$attrs)
+      console.log(this.props, this.$attrs, this)
       return { ...this.$attrs, ...this.props }
     }
   }
