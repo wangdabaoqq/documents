@@ -1,5 +1,5 @@
 ---
-title: '优秀博客案例'
+title: '个人作品'
 isShowComments: true
 ---
 
