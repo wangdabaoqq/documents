@@ -201,7 +201,7 @@ export default {
       border-bottom: 1px solid hsla(0,0%,100%,.12);
 }
 pre {
-  border-radius: 0;
+  border-radius: 0!important;
 }
 
 </style>
