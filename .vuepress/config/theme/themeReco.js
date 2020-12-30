@@ -36,7 +36,7 @@ module.exports = {
     admins: ['wangdabaoqq'],
     platform: 'github',
     owner: 'wangdabaoqq',
-    repo: 'wangdabaoqq/documents',
+    repo: 'documents',
     clientId: '6113a548edc8790e06a9',
     clientSecret: '92efbaf40784cdc3738a8f8aa609c29f7eaeadea',
   },
