@@ -16,7 +16,7 @@
     "@vuepress/plugin-pwa": "1.2.0",
     "@vuepress/plugin-register-components": "1.2.0",
     "highlight.js": "^10.5.0",
-    "vue-drag-tree-org": "^1.0.1",
+    "vue-drag-tree-org": "^1.0.17",
     "vue-highlight.js": "^2.2.0",
     "vuepress": "^1.4.0",
     "vuepress-plugin-flowchart": "1.4.3",

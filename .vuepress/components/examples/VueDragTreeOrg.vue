@@ -3,17 +3,7 @@
       :data="data"
       :props="defaultProps"
       node-key="id"
-      :default-expand-all="isExpand"
-      :direction="direction"
     >
-      <span
-        slot-scope="{ node, data }"
-        class="org-tree-node-label"
-      >
-        <span class="org-tree-node-label-inner clickable-node">
-          {{ data.label }}
-        </span>
-      </span>
     </vueDragTree>
 </template>
 
@@ -25,8 +15,8 @@ export default {
   components: { vueDragTree },
   data() {
     return {
-      direction: 'Horizontal',
-      isExpand: false,
+      // direction: 'Horizontal',
+      // isExpand: false,
       data: [
         {
           id: 0,
@@ -91,6 +81,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>
