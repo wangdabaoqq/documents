@@ -1,6 +1,6 @@
 <template>
   <div class="demo-card">
-    <div class="source">
+    <div class="codeShow">
       <slot />
     </div>
     <div
@@ -116,8 +116,8 @@ export default {
   .demo-card:hover {
     box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6), 0 2px 4px 0 rgba(232, 237, 250, 0.5);
   }
-  .demo-card .source {
-    padding: 24px;
+  .demo-card .codeShow {
+    padding: 40px;
   }
   .code {
     padding: 10px;
@@ -202,6 +202,9 @@ export default {
 }
 pre {
   border-radius: 0!important;
+}
+  .demo-card /deep/ .org-tree-node-btn {
+  margin-top: 9px;
 }
 
 </style>

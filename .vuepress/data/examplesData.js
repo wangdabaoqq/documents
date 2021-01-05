@@ -12,6 +12,12 @@ export default [
     thumbnail: 'https://raw.githubusercontent.com/wangdabaoqq/imgPicGo/master/bing.png'
   },
   { 
+    name: 'cnode', 
+    desc: 'cnode',
+    link: 'https://wangdabaoqq.github.io/VueCnode/#/index', 
+    thumbnail: 'https://raw.githubusercontent.com/wangdabaoqq/imgPicGo/master/cnode.png'
+  },
+  { 
     name: '博客', 
     desc: '个人博客',
     link: 'https://wangdabao.js.org', 

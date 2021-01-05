@@ -1,18 +1,18 @@
 <template>
-   <vueDragTree
+   <VueDragTreeOrg
       :data="data"
       :props="defaultProps"
       node-key="id"
     >
-    </vueDragTree>
+    </VueDragTreeOrg>
 </template>
 
 <script>
-import vueDragTree from 'vue-drag-tree-org'
-import 'vue-drag-tree-org/lib/theme/index.css'
+// import vueDragTree from 'vue-drag-tree-org'
+// import 'vue-drag-tree-org/lib/theme/index.css'
 export default {
   name: 'DragTree',
-  components: { vueDragTree },
+  // components: { vueDragTree },
   data() {
     return {
       // direction: 'Horizontal',

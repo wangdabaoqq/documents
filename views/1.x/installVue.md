@@ -1,5 +1,5 @@
 ---
-title: 使用
+title: vue-drag-tree-org控件
 date: 2019-04-09
 ---
 <DemoBlock title="基础用法" desc="基础用法" onlineRunLink="https://codesandbox.io/s/musing-chandrasekhar-ontro?file=/src/components/HelloWorld.vue" :config="codeNavConfigs">
@@ -11,9 +11,7 @@ date: 2019-04-09
   </template> -->
 
   <highlight-code slot="vue" lang="vue">
-
   <<< @/.vuepress/components/examples/VueDragTreeOrg.vue
-
   </highlight-code>
 
 </DemoBlock>
@@ -61,9 +59,8 @@ date: 2019-04-09
         tableBody: [
           `size | 尺寸 | String | medium / small / mini | —`
         ],
-        codeNavConfigs: ['vue'] 
+        codeNavConfigs: ['vue']
       }
-    },
-
+    }
   }
 </script>
