@@ -23,14 +23,14 @@ yarn add vue-drag-tree-org
 
 ## 引用
 
-```js
+````js
 # use
-import VueDragTree from 'vue-drag-tree-org'
-import 'vue-drag-tree-org/lib/theme/index.css'
+import VueDragTreeOrg from 'vue-drag-tree-org'
 
-Vue.use(VueDragTree)
+Vue.use(VueDragTreeOrg)
 
 # or use
 compoents: {
-  VueDragTree
+  VueDragTreeOrg
 }
+```

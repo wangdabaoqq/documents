@@ -13,9 +13,9 @@ actionText: 快速开始
 actionLink: /views/1.x/
 features:
 - title: 过去
-  details: 开发一款看着开心、写着顺手的 vuepress 博客主题。
+  details: 开发一款基于Vue2.X的拖拽组织树。
 - title: 当下
-  details: 帮助更多的朋友节省时间去用心书写内容，而不是仅仅配置一个博客去孤芳自赏。
+  details: 更好的完善目前开发的功能, 考虑后续开发的一些功能。
 - title: 未来
   details: 吸引更多的朋友参与到开发中来，继续强大功能。
 ---
@@ -31,23 +31,24 @@ yarn add vue-drag-tree-org
 ## 使用
 ```js
 # use
-import VueDragTree from 'vue-drag-tree-org'
+import VueDragTreeOrg from 'vue-drag-tree-org'
 
-Vue.use(VueDragTree)
+Vue.use(VueDragTreeOrg)
 
 # or use
 compoents: {
-  VueDragTree
+  VueDragTreeOrg
 }
 ```
 ## CDN
 ```html
 # css
-<link href="https://unpkg.com/vue-drag-tree-org/lib/theme/index.css">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-drag-tree-org@1.0.19/lib/theme/index.css">
+
 
 # js
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-<script src="https://unpkg.com/vue-drag-tree-org/lib/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-drag-tree-org@1.0.19/lib/index.umd.js"></script>
 ```
 
 ## 相关仓库
