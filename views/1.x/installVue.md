@@ -23,7 +23,7 @@ date: 2019-04-09
 | data | 展示数据 | array | — | — |
 | empty-text | 内容为空的时候展示的文本 | String | — | - |
 | node-key | 每个树节点用来作为唯一标识的属性，整棵树应该是唯一的 | String | - | — |
-| props | 是否支持透明度选择 | object | — | - |
+| props | 配置选项，具体看下表 | object | — | - |
 | default-expand-all | 是否默认展开所有节点 | boolean | - | - |
 | accordion | 是否每次只打开一个同级树节点展开	| boolean | — | false |
 | draggable | 是否开启拖拽节点功能 | boolean | — | false |

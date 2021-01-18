@@ -49,7 +49,7 @@ module.exports = {
   docsBranch: 'master',
   // // 默认是 false, 设置为 true 来启用
   editLinks: true,
-  mode: 'auto',
-  modePicker: true,
+  mode: 'light',
+  modePicker: false,
   codeTheme: 'tomorrow'
 }
